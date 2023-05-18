@@ -1,0 +1,107 @@
+.App {
+  width: 45%;
+  height: 90vh;
+  margin: 5vh auto;
+  background: #f5f5f5;
+
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 96%;
+  }
+}
+
+
+.header {
+
+  overflow: hidden;
+
+  .title {
+    background-color: #a7d5f0;
+
+    h1 {
+      width: 100%;
+      font-size: calc(48px);
+      // letter-spacing: 10px;
+      text-align: center;
+      padding: 10px 0;
+      color: #fff;
+    }
+
+    .timezone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+
+      .month {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: .35rem;
+      }
+
+      .timeArea {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+      }
+
+      .now {
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: .3rem;
+
+      }
+
+    }
+
+
+
+  }
+
+  .textInput {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+
+
+
+  .rdp {
+
+    .my-selected:not([disabled]) {
+      font-weight: bold;
+      border: 2px solid currentColor;
+    }
+
+    .my-selected:hover:not([disabled]) {
+      border-color: #a7d5f0;
+      color: #a7d5f0;
+    }
+
+    .my-today {
+      font-weight: bold;
+      font-size: 140%;
+      color: rgb(0, 0, 0);
+    }
+
+    .rdp-day_selected,
+    .rdp-day_selected:focus-visible,
+    .rdp-day_selected:hover {
+      background-color: #a7d5f0;
+    }
+
+
+  }
+
+
+
+
+}

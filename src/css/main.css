@@ -1,0 +1,74 @@
+.App {
+  width: 45%;
+  height: 90vh;
+  margin: 5vh auto;
+  background: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 96%;
+  }
+}
+.header {
+  overflow: hidden;
+}
+.header .title {
+  background-color: #a7d5f0;
+}
+.header .title h1 {
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+.header .title .timezone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header .title .timezone .month {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.35rem;
+}
+.header .title .timezone .timeArea {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+}
+.header .title .timezone .now {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+.header .textInput {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.header .rdp .my-selected:not([disabled]) {
+  font-weight: bold;
+  border: 2px solid currentColor;
+}
+.header .rdp .my-selected:hover:not([disabled]) {
+  border-color: #a7d5f0;
+  color: #a7d5f0;
+}
+.header .rdp .my-today {
+  font-weight: bold;
+  font-size: 140%;
+  color: rgb(0, 0, 0);
+}
+.header .rdp .rdp-day_selected,
+.header .rdp .rdp-day_selected:focus-visible,
+.header .rdp .rdp-day_selected:hover {
+  background-color: #a7d5f0;
+}/*# sourceMappingURL=main.css.map */
